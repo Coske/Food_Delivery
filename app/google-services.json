@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "740958226125",
+    "project_id": "orwimafirebase",
+    "storage_bucket": "orwimafirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740958226125:android:72f47da104a990d2e58b84",
+        "android_client_info": {
+          "package_name": "com.example.food_delivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740958226125-8qbc5u6ia1f8jm7tdq47gkjab3i2bdit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBnwGkSWBiFL_O-NWNerIB2brEP1eaXHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740958226125-8qbc5u6ia1f8jm7tdq47gkjab3i2bdit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

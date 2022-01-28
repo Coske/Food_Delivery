@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SpecialsFragment">
+
+    <TextView
+        android:id="@+id/specialsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_grey"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="HAPPY HOUR SPECIAL OFFER"
+        android:textAlignment="center"
+        android:textColor="#18FFFF"
+        android:textSize="35sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/specialOfferText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="sample"
+        app:layout_constraintBottom_toTopOf="@id/specialOffer1"
+        app:layout_constraintEnd_toEndOf="@+id/specialOffer1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/specialOffer1" />
+
+    <TextView
+        android:id="@+id/specialOfferText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sample"
+        app:layout_constraintBottom_toTopOf="@id/specialOffer2"
+        app:layout_constraintEnd_toEndOf="@+id/specialOffer2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/specialOffer2" />
+
+    <TextView
+        android:id="@+id/specialOfferText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sample"
+        app:layout_constraintBottom_toTopOf="@id/specialOffer3"
+        app:layout_constraintEnd_toEndOf="@+id/specialOffer3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/specialOffer3" />
+
+    <TextView
+        android:id="@+id/specialOfferText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sample"
+        app:layout_constraintBottom_toTopOf="@id/specialOffer4"
+        app:layout_constraintEnd_toEndOf="@+id/specialOffer4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/specialOffer4" />
+
+    <ImageView
+        android:id="@+id/specialOffer1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/specialsText"
+        app:layout_constraintRight_toLeftOf="@+id/specialOffer2"
+        app:layout_constraintBottom_toTopOf="@id/specialOffer3"
+        android:src="@drawable/samplefood"
+        />
+
+    <ImageView
+        android:id="@+id/specialOffer2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/samplefood"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/specialOffer1"
+        app:layout_constraintTop_toBottomOf="@+id/specialsText"
+        app:layout_constraintBottom_toTopOf="@id/specialOffer4"
+        />
+
+    <ImageView
+        android:id="@+id/specialOffer3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/samplefood"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/specialOffer1"
+        app:layout_constraintBottom_toTopOf="@id/addToCartButton"
+        app:layout_constraintRight_toLeftOf="@id/specialOffer4"
+        />
+
+    <ImageView
+        android:id="@+id/specialOffer4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/samplefood"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/specialOffer2"
+        app:layout_constraintLeft_toRightOf="@id/specialOffer3"
+        app:layout_constraintBottom_toTopOf="@id/addToCartButton"/>
+
+    <Button
+        android:id="@+id/addToCartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/specialOffer4"
+        android:text="Add to cart!"
+        android:textSize="30sp"
+        android:backgroundTint="@color/cart_green"
+
+        />
+    <!--<ImageView
+        android:id="@+id/specialOffer5"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        tools:src="@drawable/samplefood"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/specialOffer4"
+    />
+    -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
